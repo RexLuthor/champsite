@@ -1,0 +1,116 @@
+{%extends "base.html"%}
+{% load active_link_tags %}
+{% load static %}
+<!-- Page Content-->
+{% block title %}About Championchip{% endblock %}
+{%block content%}
+<header class="container-fluid  py-5" id="intro">
+    
+    <div class=" px-lg-4" id="about">
+        <div class="imgcont">
+            <img src="{% static 'img/1.jpg'%}" alt="Runner"  id="runner">
+        </div>
+        <div class="p-4 p-lg-5 rounded-3 text-center container">
+            <div class="m-2 m-lg-5">
+                <p class="fs-4">
+                    We are a fully-fledged Race Timing
+                    using an urbane state of the art Race Timing Solution utilizing RFID Timing Technology from MYLAPS.
+                    Our solution utilizes the MYLAPS BibTag timing system which is suitable for mass events with affordable
+                    chips and the highest read-rate in the industry. We use different solutions for different sports and tags
+                    are chosen based on the suitability for the sport, size of the event and the setting in which the event is
+                    held.</p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class=" my-5 py-2 text-center">
+    <h1 class=" m-0">More Services</h1>
+</div>
+<div class="container px-4 px-lg-4">
+    
+    <!-- Page Content-->
+    <section class="pt-4">
+        <div class="container px-lg-5">
+            <!-- Page Features-->
+            <div class="row gx-lg-5">
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-trophy"></i></div>
+                            <h2 class="fs-4 fw-bold">Trophies</h2>
+                            <p class="mb-0">We supply custom made trophies for any event using various materials. The trophies are
+                                specifically designed to meet the event requirements with quality in mind.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-pin-map-fill"></i></div>
+                            <h2 class="fs-4 fw-bold">Route Marking</h2>
+                            <p class="mb-0">Our team members are qualified and certified route markers thus we are able mark routes for
+                                any event big or small.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-stopwatch"></i></div>
+                            <h2 class="fs-4 fw-bold">Timing Setup</h2>
+                            <p class="mb-0">Running chip timing systems combine chips (tags) worn by athletes and detection mats along the
+                                course, for example at the start or finish line. The MYLAPS BibTag System has the highest read-rates in
+                                the industry. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-clock"></i></div>
+                            <h2 class="fs-4 fw-bold">Race Clocks</h2>
+                            <p class="mb-0">We provide various race clocks for use at events on rental basis however we also supply race
+                                clocks for purchase. The clocks include tripod, hanging, car mounted, motor bicycle mounted,
+                                start and finish line clocks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
+                            <h2 class="fs-4 fw-bold">Medals</h2>
+                            <p class="mb-0">We supply custom made medals for any event. The medals are specifically designed to meet the
+                                event requirements with quality in mind.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-printer"></i></div>
+                            <h2 class="fs-4 fw-bold">Race Number Printing</h2>
+                            <p class="mb-0">We offer in-house personalized race number printing using digital printing on high-quality color
+                                polyester paper. Our race numbers are waterproof and printed on tear proof material. We can
+                                print different race number models with own colors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=" my-5 py-2 text-center">
+        <h1 class=" m-0">Our Customers</h1>
+    </div>
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md">
+            <img src="{% static 'img/124.webp'%}" class="img-fluid p-5">
+        </div>
+        <div class="col-md">
+            <img src="{% static 'img/3.jpg'%}" class="img-fluid p-5">
+        </div>
+    </div>
+</div>
+
+{% endblock content%}

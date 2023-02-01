@@ -1,0 +1,31 @@
+{%  extends "base.html" %}
+{% load active_link_tags %}
+<!-- templates/home.html -->
+{% load static %}
+{% block title %}Championchip Events{% endblock %}
+{% block content %}
+<div class="imgcont2">
+    <img src="{% static 'img/1.jpg'%}" alt="Runner"  id="runner2">
+    
+</div>
+<div class ="container">
+    <div class=" my-2 py-4 text-center">
+        <h1 class=" m-0">Upcoming Events</h1>
+    </div>
+    {% for post in posts %}
+    <div class="p-4 m-4 card mx-0">
+       <h2>
+           {{ post.title }}
+       </h2>
+       <img class="thumbnail" src="{{post.img_url}}" alt="race logo">
+       <p class="date">
+           Published {{ post.publish }} by {{ post.author }}
+       </p>
+       {{ post.body|truncatewords:30|linebreaks }}
+       <button type="button" class="btn btn-primary" href="{{post.reg_url}}" style="width:200px;">Register</button>
+    </div>
+    {% endfor %}
+
+
+</div>
+{%endblock content%}

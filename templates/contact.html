@@ -1,0 +1,39 @@
+
+{%extends "base.html"%}
+
+{% load active_link_tags %}
+{% load static %}
+{% block title %}Championchip Contacts{% endblock %}
+{%block content%}   
+   <!-- Page Content-->
+    <div class="container-fluid">
+        <div class=" px-lg-2" id="cintro">
+            <div class="imgcont2">
+                <img src="{% static 'img/1.jpg'%}" alt="Runner"  id="runner2">
+                
+            </div>
+            
+        </div> 
+        <div class=" my-2 py-2 text-center">
+            <h1 class=" m-0">Our Contacts</h1>
+        </div>
+        <div class="p-2 text-center container">
+            <div class="">
+                <p class="">
+                    
+                    <ul>
+                        <li>
+                            Email: info@championchip.co.bw 
+                        </li>
+                        <li>
+                            Web: www.championchip.co.bw 
+                        </li>
+                        <li>
+                            Tel: +267 75 711 884/ 72 144 011 
+                        </li>
+                    </ul>
+                    </p>
+            </div>
+        </div>
+    </div>
+{%endblock content%}

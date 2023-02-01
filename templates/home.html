@@ -1,0 +1,110 @@
+{%  extends "base.html" %}
+<!-- templates/home.html -->
+
+{% load active_link_tags %}
+{% load static %}
+{% block title %}Championchip Home{% endblock %}
+{% block content %}
+
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7"><img class="img-fluid mb-4 mb-lg-0" src="{% static 'img/2.jpg'%}" alt="..." /></div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Championchip Botswana</h1>
+                <p>We are 100% Botswana citizen owned company, founded in 2022. We are a fully-fledged Race Timing
+                using an urbane state of the art Race Timing Solution utilizing RFID Timing Technology from MYLAPS.</p>
+                <a class="btn btn-primary" href="{% url 'about' %}">Learn More</a>
+            </div>
+        </div>
+    
+        <!-- Call to Action-->
+        <div class=" my-5 py-4 text-center">
+            <h1 class=" m-0">Core Services</h1>
+        </div>
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Event Timing</h2>
+                        <p class="card-text">We provide event timing services with split timing capabilities for all types of running, hiking,
+                            walking and racing events including Road and Trail races, Bike Races, Triathlons/Duathlons, Time
+                            Trials for any organization including schools, corporate and government. We have a free APP
+                            that can be used for smaller events saving you costs.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Online Registration</h2>
+                        <p class="card-text">We use an easy to use customizable online event registration portal. The portal is fully
+                            customizable to ensure that both runners and sponsors get value for their money. We offer a
+                            wide choice of types of marketing campaigns that can be used for your event</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Online Event Results</h2>
+                        <p class="card-text">All event results are published on our user friendly website immediately after verification and
+                            sign off by the race organizers and sanctioning body.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Race Pack Packaging &amp; Distribution</h2>
+                        <p class="card-text">We offer sequentially numbered envelopes pre packed with bibs, safety pins and any other
+                            items that the event organizer would like inserted in the envelopes. The envelopes are also
+                            marked with the name of the participant and race number.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Race Merchandise</h2>
+                        <p class="card-text">We supply locally made and international custom made branded clothing for any event and
+                            these include; T-Shits, Vests, Caps, Jackets, Bags et al. All the merchandise is specifically
+                            designed to meet the event requirements with quality in mind.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Event Management &amp; Advisory Services</h2>
+                        <p class="card-text">We provide event management and advisory services. These services include, water points’
+                            setup, constituents for the water point et al. Our services include project management services
+                            to ensure that the event flows with minimal interruptions
+                            …. we are good at what we do!!!!.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'about' %}">More Info</a></div>
+                </div>
+            </div>
+        </div>
+        <div class=" my-5 py-4 text-center">
+            <h1 class="m-0">Our Partners</h1>
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <img src="{% static 'img/mylaps.png' %}">
+            </div>
+            <div class="col-md-4 mb-5">
+                <img src="{% static 'img/ultisport.png' %}">
+            </div>
+            <div class="col-md-4 mb-5">
+                <img src="{% static 'img/champlogo1.png' %}">
+            </div>
+        </div>
+    </div>
+{% endblock %}
